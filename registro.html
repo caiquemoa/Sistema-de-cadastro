@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="centro">
+        <div class="formField">
+            <div class="label">Email</div>
+            <input placeholder="toinho@gmail.com" type="text" id="email">
+        </div>
+        <div class="formField">
+            <div class="label">Usuario</div>
+            <input placeholder="Login" type="text" id="login">
+        </div>
+
+        <div class="formField">
+            <div class="label">Senha</div>
+            <input placeholder="Senha:" type="password" id="senha">
+            <div class="errou"></div>
+        </div>
+
+        <div class="formField">
+            <div class="label">Confirmar</div>
+            <input placeholder="Senha:" type="password" id="confirmarsenha">
+            <div class="errou"></div>
+        </div>
+
+        <div id="button">
+            <button onclick="criar()">Criar</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
