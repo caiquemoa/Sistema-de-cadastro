@@ -52,7 +52,7 @@ function logar() {
     const localUsers = JSON.parse(localStorage.getItem('users'))
     console.log(localUsers)
     if (checarLogin(user, password, localUsers)) {
-        window.location.href = './sustoboyuri.html'
+        alert("usuario logado")
     } else {
         alert("Usuario ou senha invalida")
     }
