@@ -5,6 +5,7 @@ function criar() {
     const user = document.getElementById("login").value
     const senha = document.getElementById("senha").value
     const confirmarSenha = document.getElementById("confirmarsenha").value
+
     if (senha != confirmarSenha) {
         for (i = 0; i <= document.getElementsByClassName("errou").length - 1; i++) {
             document.getElementsByClassName("errou")[i].innerHTML = "Senhas diferentes"
@@ -13,10 +14,12 @@ function criar() {
 
         return
     }
+
     if (verificarEmail(email)) {
         alert("Email ja cadastrado")
         return
     }
+
     const usuarios = {
         email: email,
         usuario: user,
@@ -28,10 +31,6 @@ function criar() {
     localStorage.setItem('users', JSON.stringify(users));
     window.location.href = "./login.html"
 
-}
-
-function teste() {
-    console.log(users)
 }
 
 function verificarEmail(email) {
@@ -56,7 +55,6 @@ function logar() {
     } else {
         alert("Usuario ou senha invalida")
     }
-
 
 }
 function checarLogin(user, pass, localUsers) {
