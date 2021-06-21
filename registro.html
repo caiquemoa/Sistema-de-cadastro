@@ -7,28 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 
 <body>
     <div id="centro">
         <div class="formField">
             <div class="label">Email</div>
-            <input placeholder="toinho@gmail.com" type="text" id="email">
+            <input placeholder="Ex: toinho@gmail.com" type="text" id="email">
         </div>
         <div class="formField">
             <div class="label">Usuario</div>
-            <input placeholder="Login" type="text" id="login">
+            <input placeholder="Ex: shaolinmatadordeporco" type="text" id="login">
         </div>
-
         <div class="formField">
             <div class="label">Senha</div>
-            <input placeholder="Senha:" type="password" id="senha">
+            <div>
+                <input placeholder="Min:4 Max:7" type="password" id="senha" style="width: 95.5% ;">
+                <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"
+                    onclick="showPass()"></i>
+            </div>
             <div class="errou"></div>
         </div>
-
         <div class="formField">
             <div class="label">Confirmar</div>
-            <input placeholder="Senha:" type="password" id="confirmarsenha">
+            <input placeholder="Min:4 Max:7" type="password" id="confirmarsenha">
             <div class="errou"></div>
         </div>
 
@@ -38,7 +41,8 @@
 
     </div>
 
-    <script src="script.js"></script>
+
+    <script src="registro.js"></script>
 </body>
 
 </html>

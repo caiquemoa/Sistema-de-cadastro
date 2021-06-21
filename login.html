@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de login</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
     <div id="centro">
@@ -15,18 +16,17 @@
         </div>
         <div class="formField" >
             <div class="label">Senha</div>
-            <input placeholder="Senha:" type="password" id="pass" >
+            <div>
+                <input placeholder="Senha:" type="password" id="pass" style="width: 95.5% ;">
+                <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"
+                onclick="showPass()"></i>
+            </div>
         </div>
         <div id="button" >
             <button onclick="logar()">Entrar</button>
             <p>Não tem conta?<a href="./registro.html"> Clique Aqui</a></p>
-        </div>        
-        
-            
-
-
+        </div>           
     </div>
-
-<script src="script.js"></script>
+<script src="login.js"></script>
 </body>
 </html>
