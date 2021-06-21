@@ -1,5 +1,5 @@
 const users = JSON.parse(localStorage.getItem('users')) ?? []
-// codigo do registro
+// codigo do registro.
 function criar() {
     const email = document.getElementById("email").value
     const user = document.getElementById("login").value
